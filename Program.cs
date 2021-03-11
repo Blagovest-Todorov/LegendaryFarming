@@ -12,7 +12,6 @@ namespace TasksAgain
             { {"shards", 0}, 
               {"fragments", 0}, 
               {"motes", 0}
-
             };
             Dictionary<string, int> junkMaterials = new Dictionary<string, int>();
 
@@ -35,13 +34,11 @@ namespace TasksAgain
                     string material = quantityRecourse[i + 1];
 
                     if (material == "shards" || material == "fragments" || material == "motes")
-                    { //now we ernter in materialsDictionary to check
-                        
+                    { //now we ernter in materialsDictionary to check                        
                             materials[material] += quantity;                        
 
                         if (materials[material] >= 250)
                         {
-
                             if (material == "shards")
                             {
                                 Console.WriteLine("Shadowmourne obtained!");
